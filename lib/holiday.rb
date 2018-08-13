@@ -67,10 +67,14 @@ def all_supplies_in_holidays(holiday_hash)
       holidays.each do |holiday, supply|
         output_string = ""
         if holiday.to_s.include? "_"
+          counter = 0
            holiday.to_s.split("_").each do |word|
-            word.capitalize
+           output_string += word.capitalize
+           if counter == 0 
+             output_string += " "
+             counter += 1 
            end 
-           output_string = holiday.to_s.split.join(" ")
+           end 
            puts output_string
         end 
 
