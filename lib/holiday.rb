@@ -70,7 +70,7 @@ def all_supplies_in_holidays(holiday_hash)
           counter = 0
            holiday.to_s.split("_").each do |word|
            output_string += word.capitalize
-           if counter != holiday.to_s.split("_").length
+           if counter != holiday.to_s.split("_").length-1
              output_string += " "
              counter += 1 
            end 
