@@ -70,7 +70,7 @@ def all_supplies_in_holidays(holiday_hash)
            holiday.to_s.split("_").each do |word|
             word.capitalize
            end 
-           output_string = 
+           output_string = holiday.to_s.split.join(" ")
            puts output_string
         end 
 
