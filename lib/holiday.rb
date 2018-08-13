@@ -65,7 +65,7 @@ def all_supplies_in_holidays(holiday_hash)
    holiday_hash.each do |season, holidays|
      puts season.to_s.capitalize + ":"
       holidays.each do |holiday, supply|
-        output_string = ""
+        output_string = "  "
         if holiday.to_s.include? "_"
           counter = 0
            holiday.to_s.split("_").each do |word|
@@ -75,7 +75,9 @@ def all_supplies_in_holidays(holiday_hash)
              counter += 1 
            end 
            end 
-           puts output_string
+           output_string += ":"
+        else 
+          output_string += holiday.to_s.capitalize + ":" + supply
         end 
 
       end
