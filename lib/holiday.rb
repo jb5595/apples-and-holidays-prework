@@ -75,7 +75,7 @@ def all_supplies_in_holidays(holiday_hash)
              counter += 1 
            end 
            end 
-           output_string += ": "
+           output_string += ": " + supplies.join(", ")
         else 
           output_string += holiday.to_s.capitalize + ": " + supplies.join(", ")
 
