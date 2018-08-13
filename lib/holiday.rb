@@ -68,9 +68,9 @@ def all_supplies_in_holidays(holiday_hash)
         output_string = ""
         if holiday.to_s.include? "_"
            holiday.to_s.split("_").each do |word|
-             output_string +=word.capitalize
-        
+            word.capitalize
            end 
+           output_string = 
            puts output_string
         end 
 
